@@ -56,13 +56,12 @@ function generatePassword(){
    console.log(emptyArray)
    ;
   }
-
+  var makePassword = ""
   for (i = 0; i < charachterNum; i++) { 
-    var makePassword = emptyArray[Math.floor(Math.random() * charachterNum)]
-     
-  var printPassword = document.querySelector("password");    
-  printPassword.document.write(makePassword);
-  }
+  makePassword += emptyArray[Math.floor(Math.random() * emptyArray.length - 1)]}
+  var printPassword = document.querySelector("#password");    
+  printPassword.innerHTML = makePassword;
+  
   
 }
   
